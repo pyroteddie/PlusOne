@@ -1,15 +1,18 @@
 import React, { lazy, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import homePage from './homePage';
-import signin from './signIn';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import HomePage from './homePage';
+import SignIn from './signIn';
+
 
 export default () => {
                                     /* webpackChunkName: "modulePublic"  */
  
 
   return <Router>
-            <Switch>
+            <Routes>
                 
-            </Switch>
+                <Route exact path="/home" element= { <HomePage /> } />
+                <Route exact path="/" element={ <SignIn /> } />
+            </Routes>
         </Router>
 }

@@ -3,6 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { SignIn } from './components/pages';
+import RoutesPage from './components/pages/routes';
 
 
 export default function App() {
@@ -13,7 +14,7 @@ export default function App() {
       >
       <View style={styles.container}>
       <StatusBar hidden />
-        <SignIn />  
+        <RoutesPage/>
       </View>
     </LinearGradient>
   );
