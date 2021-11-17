@@ -13,14 +13,3 @@ export default () => {
             </Switch>
         </Router>
 }
-/* import React, { lazy } from 'reactn';
-import { Route, Switch } from 'react-router';
-
-export default () => {
-  const Public      =    lazy(() => import(/* webpackChunkName: "modulePublic"  */ './public'  ));
-
-  return <Switch>
-  <Route path="/"        component={Public}  />
-</Switch>
-}
-*/
