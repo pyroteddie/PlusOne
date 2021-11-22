@@ -10,12 +10,12 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@types/react": "^17.0.35",
-    "@types/react-dom": "^17.0.11",
+    "@types/react": "16.8.2",
+    "@types/react-dom": "16.8.0",
     "expo-linear-gradient": "^10.0.3",
     "expo-status-bar": "^1.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
     "react-native": "^0.66.3"
   },
   "devDependencies": {

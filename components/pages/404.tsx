@@ -14,4 +14,7 @@ export default () => {
                     <Link to='/home'>Go home</Link>
                 <Pressable onPress= {() => to='/home'}></Pressable>
             </View>
+<<<<<<< HEAD
 }
+=======
+>>>>>>> aea7d895981d4e42d49a3b086ba4f20f08d3ab12
