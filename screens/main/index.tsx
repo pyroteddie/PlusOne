@@ -9,7 +9,7 @@ type mainScreenProp = StackNavigationProp<RootStackParamsList,'Main'>;
 function MainScreen(){
     const navigation = useNavigation<mainScreenProp>();
     return(
-        <View>
+        <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
             <Text>Main Screen</Text>
             <Button title="Login" onPress={()=> navigation.navigate('Auth')}/>
         </View>

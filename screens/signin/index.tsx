@@ -10,10 +10,8 @@ type signInScreenProp = StackNavigationProp<RootStackParamsList, 'SignIn'>;
  function signInScreen() {
     // put all varis and information here
   const navigation = useNavigation<signInScreenProp>();
-
-    
-    
-    return( <View>
+return( 
+    <View>
                 <Text>PlusOne</Text>
                 <TextInput placeholder='Email' style={style.signInForm} />
                 <TextInput placeholder='Password'  style={style.signInForm} />

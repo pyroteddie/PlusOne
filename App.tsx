@@ -19,7 +19,6 @@ export default function App() {
       <StatusBar hidden />
         <NavigationContainer>
           <Stack.Navigator>
-            <Stack.Screen name="SignIn" component={SignInScreen}/>
             <Stack.Screen name="Auth" component={AuthScreen}/>
             <Stack.Screen name="Main" component={MainScreen}/>
           </Stack.Navigator>
@@ -34,7 +33,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    elevation:4,
+    elevation:1,
+    color: 'black',
+    minWidth: 300,
   },
   background: {
     flex: 1, 
