@@ -1,18 +1,26 @@
 import React, { useEffect } from 'react';
 import {Button, StyleSheet, Text, TextInput, View } from 'react-native';
+import {useNavigation} from '@react-navigation/native'
+import {StackNavigationProp} from '@react-navigation/stack'
+import {RootStackParamsList} from '../RootStackParams'
 
 
-export default () => {
+type signInScreenProp = StackNavigationProp<RootStackParamsList, 'SignIn'>;
+
+ function signInScreen() {
     // put all varis and information here
-  
+  const navigation = useNavigation<signInScreenProp>();
 
-    return <View>
+    
+    
+    return( <View>
                 <Text>PlusOne</Text>
                 <TextInput placeholder='Email' style={style.signInForm} />
                 <TextInput placeholder='Password'  style={style.signInForm} />
-                <Button style={style.ButtonSign} ><Text>Sign In</Text> </ Button>
+                <Button title='Sign In' onPress={()=> navigation.navigate('Main')} ><Text>Sign In</Text> </ Button>
             </View>
-}
+    );
+  }
 
 const style = StyleSheet.create({
   signInForm: {
@@ -27,3 +35,4 @@ const style = StyleSheet.create({
     backgroundColor: 'grey',
   }
 });
+export default signInScreen;

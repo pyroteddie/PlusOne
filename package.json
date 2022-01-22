@@ -10,6 +10,8 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/stack": "^6.0.11",
     "@types/react": "^17.0.35",
     "@types/react-dom": "^17.0.11",
     "expo": "^43.0.3",
@@ -18,7 +20,11 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-native": "^0.66.3",
+    "react-native-gesture-handler": "^2.2.0",
     "react-native-linear-gradient": "^2.5.6",
+    "react-native-reanimated": "^2.3.1",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.10.2",
     "react-native-web": "^0.17.5",
     "react-router-dom": "^6.0.2"
   },
