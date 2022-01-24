@@ -13,7 +13,7 @@ function MainScreen(){
         <LinearGradient  colors={['#03E1EF', '#834AFC','#444EA6']} style={styles.background}>
         <View style={styles.container}>
             <Text>Main Screen</Text>
-            <Button title="LogOut" onPress={()=> navigation.navigate('Sign In')}/>
+            <Button title="Profile" onPress={()=> navigation.navigate('Profile')}/>
         </View>
         </LinearGradient>
     )
